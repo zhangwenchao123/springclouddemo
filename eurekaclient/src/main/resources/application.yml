@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: service-eureka-client
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: services-config
+      profile: dev
+      label: master
+  rabbitmq:
+    host: 172.16.61.135
+    port: 5672
+    username: admin
+    password: admin
+management:
+  endpoint:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+      cors:
+        allowed-methods: "*"
+        allowed-origins: "*"
+testParm: 本地的配置22323
+server:
+  time: update version1

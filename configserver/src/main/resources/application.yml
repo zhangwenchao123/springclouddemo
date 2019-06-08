@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: services-config
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:/shared
+        bootstrap: true
+  profiles:
+    active: native
+  rabbitmq:
+    host: 172.16.61.135
+    port: 5672
+    username: admin
+    password: admin
+server:
+  port: 8888
+testParm: 远程配置22323
+management:
+  endpoint:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+      cors:
+        allowed-methods: "*"
+        allowed-origins: "*"

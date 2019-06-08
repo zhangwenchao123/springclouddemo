@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: service-feign-client
+server:
+  port: 9000
+feign:
+  hystrix:
+    enabled: true
